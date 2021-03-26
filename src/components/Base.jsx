@@ -1,12 +1,12 @@
 import React, {useState,useEffect} from 'react';
 
 const Base = () => {
-  const [nombre,setNombre]=useState('Pedro');
+  const [name,setName]=useState('Pedro');
   // esta funcino se ejecuta sola
   useEffect (
     () => {
       setTimeout( ()=> {
-        setNombre('Neri')
+        setName('Neri')
         },2000
       );
     }
@@ -16,7 +16,7 @@ const Base = () => {
 
     <div>
       <h1>Pagina Base de /</h1>
-      {nombre}
+      {name}
     </div>
   );
 }
