@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Limk,
+  Link,
 } from 'react-router-dom';
 import Inicio from './components/Inicio';
 import Base from './components/Base';
@@ -12,10 +12,9 @@ import Base from './components/Base';
 function App() {
   return (
     <Router>
+    <Link to="/Inicio">Inicio</Link>
+    <Link to="/">Base</Link>
       <Switch>
-      // <Route exact path="/">
-      //    <Base/>
-      //   </Route>
         <Route path="/Inicio">
          <Inicio/>
         </Route>
